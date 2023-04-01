@@ -32,7 +32,6 @@ let cardsArray = [
     let secondCard = "";
     const card_matches = () => {
         let card_selected = document.querySelectorAll('.card_selected');
-
         card_selected.forEach((curElem) => {
             curElem.classList.add('card_match')
         })
@@ -47,7 +46,6 @@ let cardsArray = [
         card_selected.forEach((curElem) => {
             curElem.classList.remove('card_selected')
         })
-
     }
     parentDiv.addEventListener('click', (event) => {
         let curCard = event.target;
@@ -73,7 +71,6 @@ let cardsArray = [
                     }, 1000)
                 }
             }
-
         }
     })
     for(let i=0; i<shuffledChild.length; i++){
