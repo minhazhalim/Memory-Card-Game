@@ -32,24 +32,22 @@ let cardsArray = [
     let secondCard = "";
     const card_matches = () => {
         let card_selected = document.querySelectorAll('.card_selected');
-        card_selected.forEach((curElem) => {
+        card_selected.forEach((currrentElement) => {
             curElem.classList.add('card_match')
-        })
+        });
     }
     const resetGame = () => {
         firstCard = "";
         secondCard = "";
         clickCount = 0;
-
         let card_selected = document.querySelectorAll('.card_selected');
-
-        card_selected.forEach((curElem) => {
+        card_selected.forEach((currrentElement) => {
             curElem.classList.remove('card_selected')
-        })
+        });
     }
-    parentDiv.addEventListener('click', (event) => {
+    parentDiv.addEventListener('click',(event) => {
         let curCard = event.target;
-        if(curCard.id === "card-section"){return false }
+        if(curCard.id === "card-section"){return false}
         clickCount ++;
         if(clickCount < 3){
             if(clickCount === 1){
