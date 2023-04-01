@@ -33,7 +33,7 @@ let cardsArray = [
     const card_matches = () => {
         let card_selected = document.querySelectorAll('.card_selected');
         card_selected.forEach((currrentElement) => {
-            curElem.classList.add('card_match')
+            currrentElement.classList.add('card_match')
         });
     }
     const resetGame = () => {
@@ -42,7 +42,7 @@ let cardsArray = [
         clickCount = 0;
         let card_selected = document.querySelectorAll('.card_selected');
         card_selected.forEach((currrentElement) => {
-            curElem.classList.remove('card_selected')
+            currrentElement.classList.remove('card_selected')
         });
     }
     parentDiv.addEventListener('click',(event) => {
